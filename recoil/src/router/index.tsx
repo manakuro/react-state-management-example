@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { Home } from 'src/components/Home'
+import { routes } from './routes'
 
 export const Router: React.FC = (props) => {
   return (
@@ -15,13 +15,3 @@ export const Router: React.FC = (props) => {
     </BrowserRouter>
   )
 }
-
-const routes = [
-  {
-    name: 'Home',
-    path: '/',
-    component: <Home />,
-  },
-] as const
-
-export type Routes = typeof routes[number]['path']

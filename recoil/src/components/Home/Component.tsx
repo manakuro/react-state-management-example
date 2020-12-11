@@ -1,10 +1,6 @@
 import React from 'react'
-import { styled } from '@linaria/react'
+import { Box } from 'src/components/UI/atoms/Box'
 
 export const Component: React.FC = () => {
-  return <Container>hey</Container>
+  return <Box>hey</Box>
 }
-
-const Container = styled.div`
-  width: 100%;
-`
