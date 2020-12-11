@@ -7,7 +7,7 @@
     "preinstall": "typesync || :",
     "commit": "git-cz",
     "lint": "eslint --ext .js,.ts,.tsx 'src/**'",
-    "lint:fix": "eslint --ext .js,.ts,.tsx 'src/**' --fix"
+    "lint:fix": "eslint --ext .js,.ts,.tsx '**/src/**' --fix"
   },
   "devDependencies": {
     "@types/eslint": "^7.2.6",
